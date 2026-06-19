@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Page introuvable · Aura OS</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { min-height: 100vh; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Marianne", Inter, Roboto, Helvetica, Arial, sans-serif;
+    background: #eef1fb; color: #161616;
+    display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 24px;
+  }
+  .card {
+    position: relative; background: #ffffff; border: 1px solid rgba(0, 0, 145, 0.14);
+    border-radius: 20px; box-shadow: 0 22px 55px rgba(0, 0, 60, 0.14);
+    padding: 40px 44px; text-align: center; max-width: 460px; overflow: hidden;
+  }
+  .card::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px;
+    background: linear-gradient(90deg, #000091 0 33.33%, #ffffff 33.33% 66.66%, #e1000f 66.66% 100%);
+  }
+  .wordmark { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; }
+  .wordmark .os { color: #000091; }
+  h1 { font-size: 17px; margin: 18px 0 6px; }
+  p { font-size: 13.5px; color: #3a3a48; line-height: 1.5; }
+  a { display: inline-block; margin-top: 18px; font-size: 13px; font-weight: 700; color: #fff;
+      background: #000091; text-decoration: none; padding: 10px 18px; border-radius: 8px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="wordmark">Aura<span class="os">&nbsp;OS</span></div>
+    <h1>Page introuvable</h1>
+    <p>Ce lien ne mène nulle part. Revenez à l'entrée et saisissez le code d'accès.</p>
+    <a href="./">Accéder à la note</a>
+  </div>
+</body>
+</html>
